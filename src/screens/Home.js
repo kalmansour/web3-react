@@ -70,26 +70,21 @@ const Home = () => {
       }}
     >
       <div>
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          <h1
-            style={{
-              textTransform: "capitalize",
-              fontSize: 50,
-            }}
-          >
-            Let's connect with
-          </h1>
-          <h1
-            style={{
-              textTransform: "capitalize",
-              color: "#1554f0",
-              marginLeft: 10,
-              fontSize: 50,
-            }}
-          >
-            Web3-React
-          </h1>
-        </div>
+        <h1
+          style={{
+            fontSize: 50,
+            background:
+              "linear-gradient(90deg, #000000 32.2%, #000000 58.5%, #396EF2 58.51%, #4476F3 70.31%, #B6CAFA 96.08%, #FFFFFF 103.05%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            textFillColor: "transparent",
+            marginLeft: 10,
+            fontSize: 50,
+          }}
+        >
+          Let's connect with Web3-React
+        </h1>
         <div style={{ margin: 10 }}>
           <button
             type="button"
