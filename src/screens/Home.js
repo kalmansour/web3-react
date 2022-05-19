@@ -83,7 +83,6 @@ const Home = () => {
             backgroundClip: "text",
             textFillColor: "transparent",
             marginLeft: 10,
-            fontSize: 50,
           }}
         >
           Let's connect with Web3-React
