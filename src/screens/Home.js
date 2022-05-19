@@ -105,7 +105,41 @@ const Home = () => {
         </button>
         {isConnected && active ? (
           <>
-            <div>Connection Status: 🟢</div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                }}
+              >
+                <p
+                  style={{
+                    marginTop: "auto",
+                    marginBottom: "auto",
+                  }}
+                >
+                  {" "}
+                  Connection Status:{" "}
+                </p>
+                <div
+                  style={{
+                    width: "16px",
+                    height: "16px",
+                    backgroundColor: "#1AF042",
+                    boxShadow: " 0 0 7px #1AF042",
+                    borderRadius: "10px",
+                    marginTop: "auto",
+                    marginBottom: "auto",
+                    marginLeft: "8px",
+                  }}
+                />
+              </div>
+            </div>
             <div>Account: {account}</div>
             <div>Network ID: {chainId}</div>
             <select
@@ -124,7 +158,40 @@ const Home = () => {
           </>
         ) : (
           <>
-            <div>Connection Status: 🟡</div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                }}
+              >
+                <p
+                  style={{
+                    marginTop: "auto",
+                    marginBottom: "auto",
+                  }}
+                >
+                  {" "}
+                  Connection Status:{" "}
+                </p>
+                <div
+                  style={{
+                    width: "16px",
+                    height: "16px",
+                    backgroundColor: "orange",
+                    borderRadius: "10px",
+                    marginTop: "auto",
+                    marginBottom: "auto",
+                    marginLeft: "8px",
+                  }}
+                />
+              </div>
+            </div>{" "}
             <div>Account: No Account</div>
             <div>Network ID: No Network</div>
           </>
