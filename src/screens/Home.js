@@ -5,6 +5,9 @@ import { useWeb3React } from "@web3-react/core";
 // Components
 import WalletModal from "../components/WalletModal";
 
+// Styles
+import { ConnectWalletButton } from "./styles";
+
 const Home = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [isConnected, setConnected] = useState(false);
@@ -86,14 +89,12 @@ const Home = () => {
           Let's connect with Web3-React
         </h1>
         <div style={{ margin: 10 }}>
-          <button
-            type="button"
-            class="btn btn-light"
+          <ConnectWalletButton
             style={{ fontWeight: "bold", fontSize: 20 }}
             onClick={openModal}
           >
             Connect Wallet
-          </button>
+          </ConnectWalletButton>
         </div>
         <button
           onClick={() => {
